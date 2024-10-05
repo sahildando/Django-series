@@ -1,5 +1,4 @@
-
-![alt text](image.png)Django: The Full Theoretical Overview
+Django: The Full Theoretical Overview
 1. Introduction to Django
 Django is a high-level Python web framework that promotes rapid development and clean, pragmatic design. It was created to simplify the process of building complex, database-driven websites while encouraging the use of reusable code. Django’s philosophy revolves around the “Don’t Repeat Yourself” (DRY) principle, focusing on the reduction of redundant code and maximizing efficiency. It was developed in 2003 by Adrian Holovaty and Simon Willison, and is now maintained by the Django Software Foundation (DSF).
 
@@ -22,7 +21,7 @@ Templating Engine: Django has a powerful templating system that allows you to de
 URL Routing: Django's URL routing mechanism allows for clean, readable, and flexible URL mapping, making it easy to manage complex URL structures.
 
 3. Django’s MTV (Model-Template-View) Architecture
-a) Model:
+a Model:
 The Model layer in Django handles everything related to the database: creating, reading, updating, and deleting data (CRUD operations). Each model class maps to a single database table. Django's ORM automatically converts Python objects into database records and vice versa.
 
 
@@ -32,7 +31,7 @@ class Article(models.Model):
     pub_date = models.DateTimeField()
 In this example, Django will create a corresponding database table with columns for title, content, and pub_date.
 
-b) View:
+b View:
 Views in Django act as the logic behind the web pages. They take user requests, interact with models, and return a response (usually an HTML page or JSON data). A view function usually returns a HttpResponse object.
 
 from django.shortcuts import render
@@ -41,7 +40,7 @@ from .models import Article
 def article_list(request):
     articles = Article.objects.all()
     return render(request, 'articles.html', {'articles': articles})
-c) Template:
+c Template:
 Templates define how data from the view is presented to the user. Django uses its templating language to include dynamic content in the HTML.
 
 
