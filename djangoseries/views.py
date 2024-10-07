@@ -11,3 +11,4 @@ def about(request):
 
 def contact(request):
     return HttpResponse("Hello, world. You are at django series contact page")
+
