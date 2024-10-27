@@ -1,3 +1,6 @@
+![Django-Bootcamp](https://github.com/user-attachments/assets/6e8f02dd-8bf1-4486-973c-cb2fc1e91407)
+
+
 Django: The Full Theoretical Overview
 1. Introduction to Django
 Django is a high-level Python web framework that promotes rapid development and clean, pragmatic design. It was created to simplify the process of building complex, database-driven websites while encouraging the use of reusable code. Django’s philosophy revolves around the “Don’t Repeat Yourself” (DRY) principle, focusing on the reduction of redundant code and maximizing efficiency. It was developed in 2003 by Adrian Holovaty and Simon Willison, and is now maintained by the Django Software Foundation (DSF).
